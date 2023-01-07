@@ -1,0 +1,428 @@
+2022-12-24 18:13:07,522 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-7iwta98-shard-00-00.yx7xuut.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: ac-7iwta98-shard-00-00.yx7xuut.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:13:07,636 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-7iwta98-shard-00-02.yx7xuut.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: ac-7iwta98-shard-00-02.yx7xuut.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:13:37,111 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:29, serverValue:709300}] to ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+2022-12-24 18:13:37,118 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=487346800, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=637b9b72d7fdfc81420ea58e, counter=3}, lastWriteDate=Sat Dec 24 18:13:35 IST 2022, lastUpdateTimeNanos=1132608993812200}
+2022-12-24 18:13:37,368 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:30, serverValue:716699}] to ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+2022-12-24 18:13:37,372 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:31, serverValue:709307}] to ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+2022-12-24 18:13:37,720 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:32, serverValue:709899}] to ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+2022-12-24 18:13:38,428 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:33, serverValue:709899}] to ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+2022-12-24 18:13:38,429 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=195897700, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=637b9ace78c59c29b9ba6ce0, counter=4}, lastWriteDate=Sat Dec 24 18:13:36 IST 2022, lastUpdateTimeNanos=1132610311158800}
+2022-12-24 18:13:38,474 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:34, serverValue:716638}] to ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+2022-12-24 18:13:38,475 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=201370300, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007e, setVersion=7, topologyVersion=TopologyVersion{processId=637b9b206be0eb8c83479d31, counter=6}, lastWriteDate=Sat Dec 24 18:13:36 IST 2022, lastUpdateTimeNanos=1132610357079300}
+2022-12-24 18:13:38,477 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+2022-12-24 18:13:38,762 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-12-24 18:18:37,491 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-12-24 18:18:37,967 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2022-12-24 18:18:39,972 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:35, serverValue:709965}] to ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+2022-12-24 18:18:39,979 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1832193800, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=637b9ace78c59c29b9ba6ce0, counter=4}, lastWriteDate=Sat Dec 24 18:18:38 IST 2022, lastUpdateTimeNanos=1132913148743200}
+2022-12-24 18:18:58,255 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2022-12-24 18:19:06,075 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2022-12-24 18:19:09,944 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2022-12-24 18:19:10,813 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:41, serverValue:709974}] to ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+2022-12-24 18:19:10,815 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=713954400, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=637b9ace78c59c29b9ba6ce0, counter=4}, lastWriteDate=Sat Dec 24 18:19:10 IST 2022, lastUpdateTimeNanos=1132944057718300}
+2022-12-24 18:19:38,040 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:46, serverValue:709373}] to ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+2022-12-24 18:19:38,042 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=490194600, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=637b9b72d7fdfc81420ea58e, counter=3}, lastWriteDate=Sat Dec 24 18:19:37 IST 2022, lastUpdateTimeNanos=1132971284530000}
+2022-12-24 18:19:41,468 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:47, serverValue:709973}] to ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+2022-12-24 18:19:47,836 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:48, serverValue:716731}] to ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+2022-12-24 18:20:02,820 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (ac-7iwta98-shard-00-02.yx7xuut.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (ac-7iwta98-shard-00-02.yx7xuut.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:20:08,079 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2022-12-24 18:20:08,084 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-7iwta98-shard-00-01.yx7xuut.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: ac-7iwta98-shard-00-01.yx7xuut.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:20:10,296 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:374)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:216)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 5 common frames omitted
+2022-12-24 18:20:20,315 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (ac-7iwta98-shard-00-00.yx7xuut.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: This is usually a temporary error during hostname resolution and means that the local server did not receive a response from an authoritative server (ac-7iwta98-shard-00-00.yx7xuut.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:20:30,332 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-7iwta98-shard-00-00.yx7xuut.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: ac-7iwta98-shard-00-00.yx7xuut.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:20:31,174 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-7iwta98-shard-00-01.yx7xuut.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-7iwta98-shard-00-01.yx7xuut.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:20:32,844 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-7iwta98-shard-00-02.yx7xuut.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-7iwta98-shard-00-02.yx7xuut.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:20:41,184 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-7iwta98-shard-00-01.yx7xuut.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: ac-7iwta98-shard-00-01.yx7xuut.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:887)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:20:42,859 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: ac-7iwta98-shard-00-02.yx7xuut.mongodb.net
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: ac-7iwta98-shard-00-02.yx7xuut.mongodb.net
+	at java.base/java.net.InetAddress$CachedAddresses.get(InetAddress.java:801)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:887)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:21:18,531 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-7iwta98-shard-00-01.yx7xuut.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-7iwta98-shard-00-01.yx7xuut.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:21:20,192 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketException: No such host is known (ac-7iwta98-shard-00-02.yx7xuut.mongodb.net)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:211)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:75)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:180)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: No such host is known (ac-7iwta98-shard-00-02.yx7xuut.mongodb.net)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at com.mongodb.ServerAddress.getSocketAddresses(ServerAddress.java:203)
+	... 6 common frames omitted
+2022-12-24 18:21:30,169 INFO  SLF4JLogger:76 - [] Exception in monitor thread while connecting to server ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:701)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:579)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:415)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendAndReceive(InternalStreamConnection.java:342)
+	at com.mongodb.internal.connection.CommandHelper.sendAndReceive(CommandHelper.java:96)
+	at com.mongodb.internal.connection.CommandHelper.executeCommand(CommandHelper.java:44)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.initializeConnectionDescription(InternalStreamConnectionInitializer.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnectionInitializer.startHandshake(InternalStreamConnectionInitializer.java:73)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:182)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:152)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1460)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1064)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:718)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:576)
+	... 10 common frames omitted
+2022-12-24 18:21:31,070 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:84, serverValue:709393}] to ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+2022-12-24 18:21:31,072 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1261371500, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=637b9b72d7fdfc81420ea58e, counter=3}, lastWriteDate=Sat Dec 24 18:21:30 IST 2022, lastUpdateTimeNanos=1133084314944300}
+2022-12-24 18:21:31,295 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:85, serverValue:716797}] to ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+2022-12-24 18:21:31,298 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=826864800, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff000000000000007e, setVersion=7, topologyVersion=TopologyVersion{processId=637b9b206be0eb8c83479d31, counter=6}, lastWriteDate=Sat Dec 24 18:21:31 IST 2022, lastUpdateTimeNanos=1133084539925700}
+2022-12-24 18:21:31,299 INFO  SLF4JLogger:71 - [] Discovered replica set primary ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+2022-12-24 18:21:31,534 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:83, serverValue:709393}] to ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017
+2022-12-24 18:21:37,664 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:87, serverValue:710008}] to ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+2022-12-24 18:21:40,732 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:89, serverValue:716720}] to ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017
+2022-12-24 18:21:40,757 INFO  SLF4JLogger:71 - [] Opened connection [connectionId{localValue:88, serverValue:710008}] to ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017
+2022-12-24 18:21:40,758 INFO  SLF4JLogger:71 - [] Monitor thread successfully connected to server with description ServerDescription{address=ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=256213900, setName='atlas-14hquu-shard-0', canonicalAddress=ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, hosts=[ac-7iwta98-shard-00-00.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-01.yx7xuut.mongodb.net:27017, ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017], passives=[], arbiters=[], primary='ac-7iwta98-shard-00-02.yx7xuut.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=7, topologyVersion=TopologyVersion{processId=637b9ace78c59c29b9ba6ce0, counter=4}, lastWriteDate=Sat Dec 24 18:21:40 IST 2022, lastUpdateTimeNanos=1133094002148700}
+2022-12-24 18:23:37,445 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-12-24 18:28:37,461 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-12-24 18:33:37,470 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-12-24 18:38:37,504 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-12-24 18:43:37,507 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
+2022-12-24 18:48:37,515 INFO  ConfigClusterResolver:43 - [] Resolving eureka endpoints via configuration
